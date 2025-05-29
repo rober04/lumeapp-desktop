@@ -1,0 +1,127 @@
+@mixin legal() {
+  .legal {
+    padding: 0 8em;
+    @include responsive() {
+      padding: var(--s-padding-lateral-mobile);
+      line-height: 1.6;
+    }
+
+    &:deep(h1) {
+      margin: 1em 0;
+      font-family: var(--f-font-bold);
+      font-size: var(--s-font-h1);
+      color: var(--c-primary);
+      text-align: center;
+    }
+
+    &:deep(h2) {
+      margin: 1.5em 0.5em 0.5em 0;
+      font-family: var(--f-font-bold);
+      font-size: var(--s-font-h2);
+      color: var(--c-primary);
+    }
+
+    &:deep(h3) {
+      margin: 1.5em 0.5em 0.5em 0;
+      font-family: var(--f-font-bold);
+      font-size: var(--s-font-h3);
+      color: var(--c-primary);
+      &:before {
+        content: '•';
+        margin-right: 0.5em;
+      }
+    }
+
+    &:deep(h4) {
+      margin: 0.5em 0;
+      font-family: var(--f-font-bold);
+      font-size: var(--s-font-h4);
+      color: var(--c-primary);
+    }
+
+    &:deep(strong) {
+      font-family: var(--f-font-bold);
+      margin: 0 1em;
+    }
+
+    &:deep(p) {
+      font-family: var(--f-font-light);
+      font-size: var(--s-font-p);
+      line-height: 1.5rem;
+    }
+
+    &:deep(li) {
+      font-family: var(--f-font-light);
+      font-size: var(--s-font-p);
+      margin: 0.5em 0;
+      line-height: 1.6;
+      &:before {
+        content: '•';
+        margin: 0 0.5em 0 0;
+        color: var(--c-primary);
+      }
+    }
+    &:deep(ol) {
+      list-style-type: decimal;
+      list-style-position: inside;
+      margin-left: 2em;
+      counter-reset: item;
+    }
+
+    &:deep(ul li) {
+      align-items: flex-start;
+      margin: 0.5em -0.5em;
+    }
+
+    &:deep(ol li) {
+      font-family: var(--f-font-light);
+      font-size: var(--s-font-p);
+      margin: 0.5em 0;
+      padding-left: 2em;
+      position: relative;
+      &:before {
+        content: counter(item) '. ';
+        counter-increment: item;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: var(--f-font-light);
+        font-size: var(--s-font-p);
+        line-height: 1;
+        color: var(--c-primary);
+      }
+    }
+    &:deep(ul) {
+      list-style-type: disc;
+      margin-left: 2em;
+    }
+
+    &:deep(table) {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+    }
+
+    &:deep(th) {
+      background-color: var(--c-primary);
+      color: var(--c-black);
+      padding: 0.5em;
+    }
+
+    &:deep(td) {
+      border: 0.0625rem solid var(--c-grey-light);
+      padding: 0.5em;
+    }
+
+    &:deep(a) {
+      color: var(--c-white);
+      text-decoration: underline;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:deep(a:hover) {
+      color: var(--c-primary);
+    }
+  }
+}

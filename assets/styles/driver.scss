@@ -1,0 +1,57 @@
+.driver-popover.driver-styles {
+  background-color: var(--c-graphite);
+  border: 0.1em solid var(--c-white);
+  color: var(--c-black);
+
+  & .driver-popover {
+    &-title {
+      color: var(--c-primary);
+      font-family: var(--f-font-regular);
+      margin: 0 1em 0 0;
+    }
+    &-description {
+      color: var(--c-white);
+      font-family: var(--f-font-regular);
+    }
+    &-prev-btn {
+      background-color: var(--c-primary);
+      color: var(--c-black);
+      border: 0.125em solid transparent;
+      text-shadow: none;
+      padding: 0.6em;
+      font-family: var(--f-font-regular);
+
+      &:hover {
+        background-color: transparent;
+        text-shadow: none;
+        border: 0.125em solid var(--c-primary);
+        color: var(--c-white);
+        transition: all 0.3s ease-out;
+      }
+    }
+    &-next-btn {
+      background-color: var(--c-primary);
+      color: var(--c-black);
+      border: 0.125em solid transparent;
+      text-shadow: none;
+      font-family: var(--f-font-regular);
+
+      &:hover {
+        background-color: transparent;
+        text-shadow: none;
+        border: 0.125em solid var(--c-primary);
+        color: var(--c-white);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    &-progress-text {
+      color: var(--c-white);
+      font-family: var(--f-font-regular);
+    }
+    &-close-btn {
+      color: var(--c-white);
+      scale: 1.5;
+      margin: 0.6em 0 0 0;
+    }
+  }
+}
