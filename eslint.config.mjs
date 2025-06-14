@@ -4,7 +4,7 @@ const RULES = {
   ERROR: 'error',
 }
 
-module.exports = {
+export default {
   env: {
     browser: true,
     es2021: true,
@@ -63,4 +63,3 @@ module.exports = {
     'vue/no-mutating-props': RULES.ERROR,
   },
 }
-pox
