@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+    format('woff2');
+}
+
+@font-face {
+  font-family: 'roobert-light';
+  src: url('https://secure-fonts.rober404.workers.dev/RoobertTRIAL-Light.otf')
+    format('opentype');
+}
+@font-face {
+  font-family: 'roobert-regular';
+  src: url('https://secure-fonts.rober404.workers.dev/RoobertTRIAL-Regular.otf')
+    format('opentype');
+}
+@font-face {
+  font-family: 'roobert-medium';
+  src: url('https://secure-fonts.rober404.workers.dev/RoobertTRIAL-Medium.otf')
+    format('opentype');
+}
+@font-face {
+  font-family: 'roobert-heavy';
+  src: url('https://secure-fonts.rober404.workers.dev/RoobertTRIAL-Heavy.otf')
+    format('opentype');
+}
+@font-face {
+  font-family: 'roobert-bold';
+  src: url('https://secure-fonts.rober404.workers.dev/RoobertTRIAL-Bold.otf')
+    format('opentype');
+}
+@font-face {
+  font-family: 'roobert-semibold';
+  src: url('https://secure-fonts.rober404.workers.dev/RoobertTRIAL-SemiBold.otf')
+    format('opentype');
+}
