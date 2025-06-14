@@ -1,0 +1,33 @@
+{
+  "links": [
+    {
+      "name": "Following",
+      "url": "/"
+    },
+    {
+      "name": "Live",
+      "url": "/"
+    },
+    {
+      "name": "Clips",
+      "url": "/"
+    }
+  ],
+  "tabs": [
+    {
+      "id": 1,
+      "title": "Following",
+      "content": "home"
+    },
+    {
+      "id": 2,
+      "title": "Live",
+      "content": "home"
+    },
+    {
+      "id": 3,
+      "title": "Clips",
+      "content": "home"
+    }
+  ]
+}

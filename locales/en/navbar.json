@@ -1,0 +1,34 @@
+{
+  "links": [
+    {
+      "name": "Following",
+      "url": "/"
+    },
+    {
+      "name": "Explore",
+      "url": "/"
+    },
+    {
+      "name": "Portfolio",
+      "url": "/"
+    }
+  ],
+  "icons": [
+    {
+      "id": 0,
+      "url": "/PrimeIcon.svg",
+      "alt": "Twitch Prime",
+      "aria-label": "Access Twitch Prime benefits"
+    },
+    {
+      "id": 1,
+      "url": "/ProfileIcon.svg",
+      "alt": "Profile",
+      "aria-label": "Access your profile"
+    }
+  ],
+  "buttons": {
+    "login": "Log In",
+    "register": "Sign Up"
+  }
+}
