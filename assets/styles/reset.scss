@@ -42,7 +42,7 @@ a {
   text-decoration: none;
   color: inherit;
   font-size: var(--s-font-cta);
-  font-family: var(--f-font-extraLight);
+  font-family: var(--f-font-medium);
   font-weight: 100;
 }
 
@@ -60,17 +60,13 @@ p a {
   text-wrap: pretty;
 }
 
-button {
-  font-size: var(--s-font-cta);
-  font-family: var(--f-font-bold);
-  font-weight: 100;
-  cursor: pointer;
-}
-
 li {
   list-style-type: none;
   font-size: var(--s-font-p);
   font-family: var(--f-font-regular);
+}
+a li {
+  font-family: var(--f-font-medium);
 }
 
 h1,
@@ -131,7 +127,6 @@ textarea,
 select,
 button,
 label {
-  font-family: inherit;
   font-size: inherit;
   background-color: transparent;
   color: inherit;
@@ -151,13 +146,31 @@ svg {
   display: block;
   fill: currentColor;
 }
+button {
+  font-size: var(--s-font-semiSmall);
+  font-family: var(--f-font-medium);
+  font-weight: 100;
+  cursor: pointer;
+}
+input {
+  font-size: var(--s-font-cta);
+  font-family: var(--f-font-regular);
+  border-radius: var(--s-border-radius) 0 0 var(--s-border-radius);
+  border: 0.11rem solid var(--c-grey-medium);
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: var(--c-primary);
+  }
+}
 
 ::-webkit-scrollbar {
   width: 0.4375em;
   height: auto;
   border-radius: 0.25em;
   background-color: var(--c-black);
-  @media (max-width: 53.625em) {
+  @include responsive(53.625em) {
     width: 0;
   }
 }
@@ -167,7 +180,7 @@ svg {
   background: var(--c-primary);
   border-radius: 0.25em;
 
-  @media (max-width: 53.625em) {
+  @include responsive(53.625em) {
     width: 0;
   }
 }

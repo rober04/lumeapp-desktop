@@ -5,25 +5,27 @@
   --c-white: #ffffff;
   --c-graphite: #1a1a1a;
   --c-light-graphite: #f0f0f0;
-  --c-grey-light: #f0f0f0;
-  --c-grey-medium: #707070;
+  --c-grey-light: #adadad;
+  --c-grey-medium: #424242;
   --c-static-black: #000000;
   --c-static-white: #ffffff;
   --c-static-graphite: #1a1a1a;
   --c-static-grey-light: #f0f0f0;
-  --c-static-grey-medium: #707070;
+  --c-static-grey-medium: #3f3f3f;
+  --c-graphite-hover: #3d3d3d;
+  --c-primary: #ecb562;
+  --c-secondary: #a239ca;
+  --c-void: #0e0b16;
+  --c-stark: #e7dfdd;
 
-  --f-font-thin: 'neulis-sans-thin';
-  --f-font-extraLight: 'neulis-sans-extra-light';
-  --f-font-light: 'neulis-sans-light';
-  --f-font-regular: 'neulis-sans-regular';
-  --f-font-medium: 'neulis-sans-medium';
-  --f-font-semiBold: 'neulis-sans-semi-bold';
-  --f-font-bold: 'neulis-sans-bold';
-  --f-font-extraBold: 'neulis-sans-extra-bold';
-  --f-font-black: 'neulis-sans-black';
+  --f-font-light: 'roobert-light';
+  --f-font-regular: 'roobert-regular';
+  --f-font-medium: 'roobert-medium';
+  --f-font-semiBold: 'roobert-semibold';
+  --f-font-bold: 'roobert-bold';
+  --f-font-heavy: 'roobert-heavy';
 
-  --s-border-radius-button: 0.25rem;
+  --s-border-radius: 0.3rem;
   --s-border-radius-card: 0.625rem;
   --s-font-h1: 3rem;
   --s-font-h2: 3rem;
@@ -31,6 +33,7 @@
   --s-font-h4: 1.5rem;
   --s-font-p: 1rem;
   --s-font-small: 0.875rem;
+  --s-font-semiSmall: 0.92rem;
   --s-font-cta: 1rem;
   --s-font-h1-mobile: 2rem;
   --s-font-h2-mobile: 2rem;
