@@ -1,0 +1,14 @@
+{
+  "welcome": "Bienvenido",
+  "show_more": "Mostrar más",
+  "menu": {
+    "url": "/MenuIcon.svg",
+    "alt": "Botón de menú",
+    "ariaLabel": "Acceder a más opciones"
+  },
+  "aside": {
+    "subtitle_no_login": "CANALES EN DIRECTO",
+    "title": "Para ti",
+    "subtitle": "CANALES QUE SIGO"
+  }
+}

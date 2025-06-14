@@ -1,0 +1,33 @@
+{
+  "links": [
+    {
+      "name": "Siguiendo",
+      "url": "/"
+    },
+    {
+      "name": "En directo",
+      "url": "/"
+    },
+    {
+      "name": "Clips",
+      "url": "/"
+    }
+  ],
+  "tabs": [
+    {
+      "id": 1,
+      "title": "Siguiendo",
+      "content": "MainNavbar"
+    },
+    {
+      "id": 2,
+      "title": "En directo",
+      "content": "MainNavbar"
+    },
+    {
+      "id": 3,
+      "title": "Clips",
+      "content": "MainNavbar"
+    }
+  ]
+}

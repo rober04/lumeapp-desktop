@@ -1,0 +1,14 @@
+{
+  "welcome": "Welcome",
+  "show_more": "Show more",
+  "menu": {
+    "url": "/MenuIcon.svg",
+    "alt": "Menu button",
+    "ariaLabel": "Access more options"
+  },
+  "aside": {
+    "subtitle_no_login": "LIVE CHANNELS",
+    "title": "For you",
+    "subtitle": "CHANNELS I FOLLOW"
+  }
+}
