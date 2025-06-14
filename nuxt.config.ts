@@ -1,11 +1,9 @@
-import i18nConfig from './config/i18n'
-import { alias } from './config/alias'
-import { cssImports } from './config/css'
-
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-
+  app: {
+    baseURL: './',
+  },
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -18,11 +16,15 @@ export default defineNuxtConfig({
   ],
   ssr: false,
   spaLoadingTemplate: false,
-  css: cssImports,
+  css: [
+    'assets/styles/fonts.css',
+    'assets/styles/variables.css',
+    'assets/styles/reset.scss',
+    'assets/styles/vueTransitions.css',
+  ],
   imports: {
     dirs: ['core/globals'],
   },
-  alias,
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => tag.includes('swiper'),
@@ -32,7 +34,10 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "sass:map"; @import "assets/styles/mixin.scss";',
+          additionalData: `
+            @use "sass:map";
+            @use "assets/styles/mixin" as *;
+          `,
         },
       },
     },
@@ -47,7 +52,15 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
-    ...i18nConfig,
+    lazy: true,
+    defaultLocale: 'es',
+    locales: [
+      { code: 'es', file: '../../locales/es.json', language: 'es' },
+      { code: 'en', file: '../../locales/en.json', language: 'en' },
+      { code: 'pt-BR', file: '../../locales/pt-BR.json', language: 'pt-BR' },
+    ],
+    strategy: 'prefix_except_default',
+    customRoutes: 'config',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',

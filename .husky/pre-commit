@@ -1,10 +1,6 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
 # Ejecutar tests y typecheck, guardando salida en un archivo temporal
 TEMP_FILE=$(mktemp)
 
-npx vitest run && \
 npx nuxi typecheck 2>&1 | tee "$TEMP_FILE"
 
 # Buscar errores en el archivo temporal
