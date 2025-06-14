@@ -1,3 +1,5 @@
+import { isProduction } from './core/plugins'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
@@ -17,7 +19,9 @@ export default defineNuxtConfig({
   ssr: false,
   spaLoadingTemplate: false,
   css: [
-    'assets/styles/fonts.css',
+    isProduction()
+      ? 'assets/styles/fontsProduction.css'
+      : 'assets/styles/fonts.css',
     'assets/styles/variables.css',
     'assets/styles/reset.scss',
     'assets/styles/vueTransitions.css',
